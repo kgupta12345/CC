@@ -53,13 +53,13 @@ public abstract class SwipeListener implements View.OnTouchListener {
          * A constant variable for the minimum distance a moving gesture should be in order to
          * consider it as a swipe.
          */
-        private static final int THRESHOLD = 30;
+        private static final int THRESHOLD = 50;
 
         /**
          * A constant variable for the minimum velocity of a moving gesture in order for it to be
          * considered as a swipe.
          */
-        private static final int THRESHOLD_VELOCITY = 10;
+        private static final int THRESHOLD_VELOCITY = 50;
 
         /**
          * Notified when a long press occurs with the initial on down MotionEvent that triggered it.

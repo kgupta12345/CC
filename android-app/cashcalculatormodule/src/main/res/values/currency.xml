@@ -306,5 +306,11 @@
         <item>@drawable/currency_inr_1</item>
         <item>1.0</item>
         <item>0.09</item>
+
+        <item>0</item>
+        <item>@drawable/zeronetwothree</item>
+        <item>@drawable/zeronetwothree</item>
+        <item>1.0</item>
+        <item>0.09</item>
     </array>
 </resources>

@@ -129,6 +129,16 @@
                 android:textStyle="bold"
                 android:textColor="#ffffff"
                 style="?android:attr/borderlessButtonStyle" />
+
+            <Button
+                android:text="@string/_9"
+                android:id="@+id/nine"
+                android:layout_column="10"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                style="?android:attr/borderlessButtonStyle" />
+
         </TableRow>
 
     </TableLayout>
