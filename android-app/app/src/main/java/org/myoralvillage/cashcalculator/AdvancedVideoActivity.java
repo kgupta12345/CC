@@ -510,7 +510,7 @@ public class AdvancedVideoActivity extends AppCompatActivity {
 
     private void runFadeOutAndIn() {
         AnimatorSet as = new AnimatorSet();
-        as.playSequentially(getFadeIn(black, 1000), getFadeOut(black, CashCalculatorConstants.ADV_VIDEO_DURATION_TIME));
+        as.playSequentially(getFadeIn(black, CashCalculatorConstants.ADV_VIDEO_DURATION_TIME), getFadeOut(black, CashCalculatorConstants.ADV_VIDEO_DURATION_TIME));
         as.setStartDelay(elapsed);
         animations.add(as);
         elapsed += CashCalculatorConstants.ADV_VIDEO_FADE_TIME;
