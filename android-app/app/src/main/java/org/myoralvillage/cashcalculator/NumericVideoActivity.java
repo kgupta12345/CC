@@ -122,7 +122,7 @@ public class NumericVideoActivity extends AppCompatActivity {
                 runClickNumber(1);
                 wait(CashCalculatorConstants.NUM_VIDEO_WAIT_TIME);
                 runClickCheck();
-                wait(CashCalculatorConstants.NUM_VIDEO_WAIT_TIME);
+                wait(CashCalculatorConstants.NUM_VIDEO_WAIT_TIME_CURR_STAY_ON_TABLE);
                 runClear();
                 wait(CashCalculatorConstants.NUM_VIDEO_WAIT_TIME);
                 runFadeOutAndIn();
@@ -150,7 +150,7 @@ public class NumericVideoActivity extends AppCompatActivity {
                 runCalculate();
                 wait(CashCalculatorConstants.NUM_VIDEO_WAIT_TIME);
                 runClickCheck();
-                wait(CashCalculatorConstants.NUM_VIDEO_WAIT_TIME);
+                wait(CashCalculatorConstants.NUM_VIDEO_WAIT_TIME_CURR_STAY_ON_TABLE);
                 runClear();
                 runFadeOutAndIn();
                 wait(CashCalculatorConstants.NUM_VIDEO_WAIT_TIME);
@@ -163,7 +163,7 @@ public class NumericVideoActivity extends AppCompatActivity {
                 runClickNumber(0);
                 wait(CashCalculatorConstants.NUM_VIDEO_WAIT_TIME);
                 runClickCheck();
-                wait(CashCalculatorConstants.NUM_VIDEO_WAIT_TIME);
+                wait(CashCalculatorConstants.NUM_VIDEO_WAIT_TIME_CURR_STAY_ON_TABLE);
                 runClear();
                 runFadeOutAndIn();
                 wait(CashCalculatorConstants.NUM_VIDEO_WAIT_TIME);
@@ -188,7 +188,7 @@ public class NumericVideoActivity extends AppCompatActivity {
                 runCalculate();
                 wait(CashCalculatorConstants.NUM_VIDEO_WAIT_TIME);
                 runClickCheck();
-                wait(CashCalculatorConstants.NUM_VIDEO_WAIT_TIME);
+                wait(CashCalculatorConstants.NUM_VIDEO_WAIT_TIME_CURR_STAY_ON_TABLE);
                 runEnterHistory();
                 wait(CashCalculatorConstants.NUM_VIDEO_WAIT_TIME);
                 runNext();
@@ -314,20 +314,20 @@ public class NumericVideoActivity extends AppCompatActivity {
     }
 
     private void runSwitchToAddition() {
-        animateSwipe(width - finger.getWidth(), height / 4, 0, height / 4, elapsed, CashCalculatorConstants.NUM_VIDEO_DURATION_TIME_CALC);
-        elapsed += CashCalculatorConstants.NUM_VIDEO_ELAPSED_TIME_CALC;
+        animateSwipe(width - finger.getWidth(), height / 4, 0, height / 4, elapsed, CashCalculatorConstants.NUM_VIDEO_DURATION_TIME);
+        elapsed += CashCalculatorConstants.NUM_VIDEO_ELAPSED_TIME;
         changeToAddition(elapsed);
     }
 
     private void runSwitchToSubtraction() {
-        animateSwipe(0, height / 4, width - finger.getWidth(), height / 4, elapsed, CashCalculatorConstants.NUM_VIDEO_DURATION_TIME_CALC);
-        elapsed += CashCalculatorConstants.NUM_VIDEO_ELAPSED_TIME_CALC;
+        animateSwipe(0, height / 4, width - finger.getWidth(), height / 4, elapsed, CashCalculatorConstants.NUM_VIDEO_DURATION_TIME);
+        elapsed += CashCalculatorConstants.NUM_VIDEO_ELAPSED_TIME;
         changeToSubtraction(elapsed);
     }
 
     private void runSwitchToMultiplication() {
-        animateSwipe(width / 2, 0, width / 2, height * 9 / 10, elapsed, CashCalculatorConstants.NUM_VIDEO_DURATION_TIME_CALC);
-        elapsed +=  CashCalculatorConstants.NUM_VIDEO_ELAPSED_TIME_CALC;
+        animateSwipe(width / 2, 0, width / 2, height * 9 / 10, elapsed, CashCalculatorConstants.NUM_VIDEO_DURATION_TIME);
+        elapsed +=  CashCalculatorConstants.NUM_VIDEO_ELAPSED_TIME;
         changeToMultiplication(elapsed);
     }
 
